@@ -294,7 +294,6 @@ h6{
   text-align:right;
   margin-top: -14px;
 }
-
 p.note {
   background: #e4f5ff;
   border: 1px solid #d1edff;
@@ -309,4 +308,8 @@ p.note {
   -webkit-border-top-right-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
   -webkit-border-bottom-right-radius: 4px;
+}
+hr {
+  margin-top:3em;
+  margin-bottom:3em;
 }
