@@ -259,3 +259,10 @@ footer {
     color:#444;
   }
 }
+
+
+span.date {
+  float: right;
+  font-weight: bold;
+  font-size: 0.8em;
+}
