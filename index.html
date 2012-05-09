@@ -19,29 +19,30 @@ title: Blogging Like a Hacker
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="teste/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
         /* This is basic - uses default settings */
         
-        $('a.fancy').fancybox();
-        
-        /* Using custom settings */
-        
-        /*$("a#inline").fancybox({
-          'hideOnContentClick': true
-        });*/
+        $('a.fancy').fancybox({
+          overlayColor: '#000000',
+          overlayOpacity: 0.9,
+          padding: '6px'
+        });
 
-        /* Apply fancybox to multiple items */
-        /*
-        $("a.group").fancybox({
-          'transitionIn'  : 'elastic',
-          'transitionOut' : 'elastic',
-          'speedIn'   : 600, 
-          'speedOut'    : 200, 
-          'overlayShow' : false
-        });*/
+        $('.videoLB').fancybox({
+          type        : 'iframe',
+          overlayColor: '#000000',
+          overlayOpacity: 0.9,
+          padding: '6px'
+        });
+
+        $("a.grouped_elements").fancybox({
+          overlayColor: '#000000',
+          overlayOpacity: 0.9,
+          padding: '6px'
+        });
         
       });
     </script>
@@ -69,10 +70,7 @@ end
 {% endhighlight %}
 
 
-{% highlight bash %}
-$ git fetch origin leonardoooooo
-$ git checkout gh-pages
-{% endhighlight %}
+
 
 
 
@@ -85,7 +83,59 @@ $ git checkout gh-pages
         Para quem não está acostumado com o uso do git em linha de comando (o git é uma ferramente inicialmente feita para ser usada em shell), fizemos uma pesquisa para encontrar possíveis <a target="_blank" href="http://pt.wikipedia.org/wiki/Interface_gr%C3%A1fica_do_utilizador">GUIs</a>, ou Graphical User Interface, para facilitar o uso do git. Encontramos algumas alternativas que são inumeradas a seguir:
       </p>
       <p class="note"><strong>1. TortoiseGit</strong></p>
-      <p><a class="fancy" href="images/ContextMenuDirControl.png"><img align="left" width="100" src="images/ContextMenuDirControl.png" alt=""/></a>O <a target="_blank" href="http://code.google.com/p/tortoisegit/">TortoiseGit</a> é o port do já famoso <a target="_blank" href="http://tortoisesvn.tigris.org/">TortoiseSVN</a> para o Git. Com seu funcionamento integrado ao shell do windows ele permite uma facil manipulação dos recursos do git através do menu de contexto windows explorer (botão direito do mouse). Com ele você facilmente faz operações como git clone, git init, git push, git pull, git add, etc. Além disso possui ferramenta para fazer merge de arquivos facilitando muito esta tarefa. Você pode baixar a última versão neste <a target="_blank" href="http://code.google.com/p/tortoisegit/downloads/list">link</a>.</p>
+      
+      <p><a class="fancy" href="images/ContextMenuDirControl.png"><img align="left" width="100" src="images/ContextMenuDirControl-pg.png" alt=""/></a>O <a target="_blank" href="http://code.google.com/p/tortoisegit/">TortoiseGit</a> é o port do já famoso <a target="_blank" href="http://tortoisesvn.tigris.org/">TortoiseSVN</a> para o Git. Com seu funcionamento integrado ao shell do windows ele permite uma facil manipulação dos recursos do git através do menu de contexto windows explorer (botão direito do mouse). Com ele você facilmente faz operações como git clone, git init, git push, git pull, git add, etc. Além disso possui ferramenta para fazer merge de arquivos facilitando muito esta tarefa. Você pode baixar a última versão neste <a target="_blank" href="http://code.google.com/p/tortoisegit/downloads/list">link</a>.</p>
+      
+      <p class="note"><strong>2. SourceTree</strong></p>
+
+      <p>
+          <div class="videoWrapper">
+            <a class="videoLB" href="http://www.youtube.com/embed/tQE1S40Z0mE?autoplay=1&amp;rel=0&amp;wmode=transparent">
+              <img alt="SourceTree is a Mac client that provides a graphical interface for your DVCS repositories so you can focus on coding, not command lines." src="images/screen_1.png" class="launchVideo videoLB cboxElement">
+              <span class="playButton videoLB cboxElement"></span>
+            </a>
+          </div>
+          <a target="_blank" href="http://www.sourcetreeapp.com/">SourceTree</a> é um cliente Git free para Mac OS X desenvolvido pela Atlassian, a empresa por trás do poderoso Jira. Ele oferece suporte a outros servidores de repositórios como Bitbuckuet e Kiln e tem toda a facilidade de uso como uma boa interface Mac exige. Você pode fazer o download do SourceTree neste <a target="_blank" href="http://www.sourcetreeapp.com/download/">link</a>.
+      </p>
+          
+      <p class="note"><strong>3. RabbitVCS</strong></p>
+
+      <p>
+        <a class="grouped_elements" rel="group1" href="images/rabbitvcs/blame.png"><img hspace="6" align="left" src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+        <div style="display:none">
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/log_viewer.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/commit_dialog.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/commit_window.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/context_menu.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+        </div>
+        O site do <a target="_blank" href="http://www.rabbitvcs.org/">RabbitVCS</a> o descreve como um controle de versão fácil para Linux mas a verdade não é exatamente essa. O software até que ajuda em algumas tarefas mas não dispõe de um recurso básico que é o <i>git add</i>, ou pelo menos está com bug na versão que testamos, a 0.15.0.5-1 no Ubuntu 12.04 Precise Pangolin. O RabbitVCS é um projeto promissor mas ainda parece bastante inacabado e com bastante bugs. De qualquer forma vale a pena instalar para ajudar nas tarefas que o mesmo consegue executar. Estão disponíveis instruções de instalação para as distribuições <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/ubuntu">Ubuntu</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/debian">Debian</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/fedora">Fedora</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/arch">Arch</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/gentoo">Gentoo</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/mandriva">Mandriva</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/opensuse">OpenSuse</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/rhelcentos">RedHat Enterprise e CentOS</a>.
+      </p>
+      <br/>
+      <h4>Instruções de instalação no Ubuntu</h4>
+      <p><strong>Karmic e posteriores</strong></p>
+      {% highlight bash %}
+      $ sudo add-apt-repository ppa:rabbitvcs/ppa
+      {% endhighlight %}
+      <p></p>
+      <p><strong>Hardy, Intrepid e Jaunty</strong></p>
+      {% highlight bash %}
+      $ deb http://ppa.launchpad.net/rabbitvcs/ppa/ubuntu **DISTRIBUIÇÃO** main
+      {% endhighlight %}
+      <p></p>
+      <p><strong>Instalação</strong></p>
+      {% highlight bash %}
+      $ sudo apt-get update
+      $ sudo apt-get install «pacotes»
+      {% endhighlight %}
+      <p></p>
+      <p><strong>... os pacotes são:</strong></p>
+      <ul>
+        <li>rabbitvcs-nautilus3 para a extensão do Nautilus 3.x (use com Ubuntu 11.10 ou maiores)</li>
+        <li>rabbitvcs-nautilus para a extensão do Nautilus 2.x</li>
+        <li>rabbitvcs-thunar para a extensão do  Thunar</li>
+        <li>rabbitvcs-gedit para a extensão do GEdit</li>
+        <li>rabbitvcs-cli para linha de comando</li>
+
       <!-- blog entry end -->
 
 

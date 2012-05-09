@@ -28,7 +28,7 @@ h2 {
   color:#393939;
 }
 
-h2, h3, h4, h5 {
+h2, h3 {
   color:#637c08;
   text-shadow: 1px 1px 1px #aaaaaa;
 }
@@ -312,4 +312,26 @@ p.note {
 hr {
   margin-top:3em;
   margin-bottom:3em;
+}
+.playButton {
+  background: url('../images/videoPlayButton.png') no-repeat scroll 0 0 transparent;
+  height: 80px;
+  position: absolute;
+  width: 80px;
+  display: block;
+  left: 112px;
+  top: 46px;
+}
+.videoWrapper {
+  display: block;
+  position: relative;
+  border: 1px solid #939393;
+  float: left;
+  margin-right: 6px;
+}
+.videoWrapper:hover .playButton {
+    background-position: 0 -80px;
+}
+h4{
+  border-bottom: solid 1px gray;
 }
