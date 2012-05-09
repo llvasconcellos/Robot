@@ -28,8 +28,9 @@ h2 {
   color:#393939;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5 {
   color:#637c08;
+  text-shadow: 1px 1px 1px #aaaaaa;
 }
 
 a {
@@ -265,4 +266,47 @@ span.date {
   float: right;
   font-weight: bold;
   font-size: 0.8em;
+  text-shadow: 1px 1px 1px #aaaaaa;
+}
+div.wrapper section {
+  font-size: 1.15em;
+}
+.gigantic {
+  font-size:1.2em;
+  padding-left:1.2em;
+} 
+q:before { 
+  content: '\201C'; 
+  font-size:300%; 
+  font-family: Georgia, "Times New Roman", Times, serif; 
+  position: absolute;
+  margin-top:-0.3em;
+} 
+q:after { 
+  content: '\201D'; 
+  font-size:300%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: absolute;
+  margin-top:-0.3em;
+  margin-left:0.2em;
+}
+h6{
+  text-align:right;
+  margin-top: -14px;
+}
+
+p.note {
+  background: #FFFFA0;
+  border: 1px solid #E6DB55;
+  background-position: 7px 50%;
+  text-align: left;
+  padding: 10px 10px 10px 45px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
 }
