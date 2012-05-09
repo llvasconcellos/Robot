@@ -104,6 +104,7 @@ header {
   width:270px;
   float:left;
   position:fixed;
+  top: 10px;
 }
 
 header ul {

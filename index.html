@@ -38,7 +38,7 @@ title: Blogging Like a Hacker
 yaml frontmatter
 
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 def foo
   puts 'foo'
 end
@@ -49,10 +49,13 @@ end
 $ git fetch origin leonardoooooo
 $ git checkout gh-pages
 {% endhighlight %}
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+
+
+{{ site.time | date_to_string }}
+
+
+{{ site.time | date_to_long_string }}
+
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
@@ -73,7 +76,9 @@ $ git checkout gh-pages
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       
 
-    @llvasconcellos
+  { @llvasconcellos }
+  {% @llvasconcellos %}
+  {{ @llvasconcellos }}
 
 
 
