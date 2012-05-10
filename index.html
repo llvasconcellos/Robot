@@ -70,11 +70,48 @@ end
 {% endhighlight %}
 -->
 
-
-
-
+      <!-- blog entry -->
+      <span class="date">09 May 2012</span>
+      <h2>Usando o shell do Git</h2>
+      <h6>por Leonardo Lima de Vasconcellos</h6>
+      <p>Como o comentado no post <a href="#">Git GUIs</a>, nem todos as interfaces gráficas para Git são boas e particularmente o RabbitVCS para Linux deixa um pouco a desejar, então para auxiliar o time de desenvolvimento vamos passar aqui alguns comandos básicos do Git em linha de comando. Os comandos abaixo foram testados no Linux Ubuntu 12.04 mas deve funcionar com qualquer versão do Linux e inclusive em outras plataformas usando o git bash.</p>
+      <h4>Clonando um repositório</h4>
+      <p>Considerando que o nome do repositório é Robot, crie um diretório chamado Robot, entre nele e execute o 'git init' que inicializará o repositório local do git e também criará a pasta .git.</p>
+{% highlight bash %}
+$ mkdir Robot
+$ cd Robot
+$ git init
+Initialized empty Git repository in /Home/User/Robot/.git/
+{% endhighlight %}
+      <p>Pronto, o repositório está inicializado mas apenas localmente. Agora é preciso conectar o repositório local com o remoto para sincronia dos arquivos. Substitua username pelo seu nome de usuário do github.</p>
+{% highlight bash %}
+$ git remote add origin git@github.com:username/Robot
+{% endhighlight %}
+      <p>Para fazer o download dos arquivos do repositório é preciso executar o comando pull do git. Será necessário entrar com a sua frase chave de segurança cadastrada no github. No comando, a palavra <i>master</i> é o nome da sua branch. Para o projeto Robot, a branch master é a branch do projeto em si e a branch gh-pages é a branch que contém os arquivos deste blog.</p>
+{% highlight bash %}
+$ git pull origin master
+{% endhighlight %}
+      <p>Agora tudo está pronto para iniciar o trabalho. Basta editar os arquivos já existentes.</p>
+      <h4>Trabalhando com o Git</h4>
+      <p> Agora caso seja necessário adicionar um novo arquivo basta executar o comando git add seguido do nome do arquivo ou diretório a ser adicionado ao controle de versão. Se este comando não for executado o arquivo que acabou de ser adicionado ao projeto vai ser ignorado pelo git. No caso dos diretórios toda a estrutura de arquivos e diretórios filhos serão adicionados também.</p>
+{% highlight bash %}
+$ git add filename.ext
+$ git add directory
+{% endhighlight %}
+      <p>Após feitas as alterações necessárias chegou a hora de comitar (salvar as alterações no repositório). Execute o comando a seguir dentro de qualquer pasta do projeto.</p>
+{% highlight bash %}
+$ git commit -am "mensagem para o commit"
+{% endhighlight %}
+      <p>A última etapa é sincronizar os arquivos com o repositório remoto usando o comando <i>push</i></p>.
+{% highlight bash %}
+$ git push
+{% endhighlight %}
+      <p>Pronto, com esses comandos básicos já é possível trabalhar no nosso projeto Robot!!</p>
+      <br />
+      <!-- blog entry end -->
 
       <!-- blog entry -->
+      <hr />
       <span class="date">09 May 2012</span>
       <h2>Git GUIs</h2>
       <h6>por Leonardo Lima de Vasconcellos</h6>
