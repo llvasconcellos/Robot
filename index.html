@@ -82,7 +82,246 @@ end
 
 
 
+<hr />
+      <span class="date">10 de maio de 2012</span>
+      <h2>Gerencia de Configuração</h2>
+      <h6>por Camila de Ramos</h6>
+      <OL STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__18_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>INTRODUÇÃO</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Este Plano de
+Gerenciamento de Configuração estabelece a relação entre a
+integridade do código-fonte e demais artefatos deste projeto,
+auxiliando o controle de modificações no sistema no decorrer do
+desenvolvimento e preservando um histórico dessas mudanças.</FONT></FONT></P>
+<OL STYLE="margin-left: 0in">
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__20_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ESCOPO</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Este documento
+descreve toda a estrutura e recursos utilizados durante o
+aprimoramento do projeto já existente denominado
+“AndroidScreenCast”.</FONT></FONT></P>
+<OL STYLE="margin-left: 0in">
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__22_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>TERMOS E
+    ABREVIAÇÕES</FONT></FONT></H2>
+  </OL>
+</OL>
+<OL START=2 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__24_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ORGANIZAÇÃO</FONT></FONT></H1>
+</OL>
+<OL START=2 STYLE="margin-left: 0in">
+  <LI><P LANG="pt-BR" STYLE="margin-left: 0.49in; margin-top: 0.25in; margin-bottom: 0.06in; line-height: 100%">
+  </P>
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__26_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>IDENTIFICAÇÃO
+    DOS ARTEFATOS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Todos os artefatos
+inclusos neste projeto serão identificados seguindo o mesmo padrão:</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;SilgaNomeDoProjeto&gt;_&lt;NomeDoArtefato&gt;.&lt;ExtensãoDoArquivo&gt;</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Exemplo:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Nome do Projeto:
+  AndroidScreenCast;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Nome do artefato:
+  Aplication;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Extensão do
+  arquivo: java;</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.79in; margin-bottom: 0in; line-height: 100%">
+    
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Identificação do
+artefato: <I><B>ASC_Aplication.java</B></I></FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL STYLE="margin-left: 0in">
+  <OL START=2 STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__28_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>VERSÃO DOS
+    ARTEFATOS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+          <FONT FACE="Times New Roman, serif"><FONT SIZE=3> A versão
+do produto será gerenciada por diretórios. Para cada nova versão
+liberada será criado no mesmo nível da primeira versão uma nova
+pasta com o sufixo NomeDoProjeto_v(versão atual do projeto).</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Exemplo:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=3>AndroidScreenCast_v1
+  (primeira versão do produto)</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=3>AndroidScreenCast_v2
+  (segunda versão do produto)</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.59in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL STYLE="margin-left: 0in">
+  <OL START=3 STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__30_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>LOCALIZAÇÃO DOS
+    ARTEFATOS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Os arquivos gerados
+durante a construção do aplicativo ficarão localizados na pasta
+“AndroidScreenCast” e, em seguida, pela pasta de nome específica
+para cada funcionalidade.</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Exemplo:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Arquivo:
+  ASC_Dados.java (arquivo de gravação de dados)</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Localização:
+  ...\AndroidScreenCast\Dados\ASC_Dados.java</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<BR><BR>
+</P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>As interfaces
+  gráficas do projeto ficarão em:</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>...\NomeProjeto\Interfaces
+\&lt;NomeArtefato&gt;.&lt;extensão&gt;</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=3 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="page-break-before: always"><A NAME="__RefHeading__32_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>CONTROLE DE
+  CONFIGURAÇÃO</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=2 STYLE="margin-left: 0in">
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__34_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>PROCEDIMENTOS DE
+    MUDANÇAS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>As
+alterações/mudanças requisitadas durante o desenvolvimento do
+projeto e após a sua conclusão ocorrerão da seguinte maneira: </FONT></FONT>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>1º Essa solicitação
+será repassada a pessoa responsável pela edição/criação dos
+documentos do projeto, para atualização ou criação de novos
+documentos, caso seja necessário. Feita a alteração na
+documentação, será repassado ao desenvolvedor para aplicar as
+devidas mudanças.</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>2º Estando o
+desenvolvedor de posse da nova documentação, este aplica as
+mudanças necessárias no produto e repassa para o responsável pelos
+testes. Caso ocorra algum erro, o desenvolvedor será comunicado por
+e-mail. Quando todas as alterações estiverem prontas, sem nenhum
+erro, uma nova versão do produto será liberada conforme padrão
+descrito neste documento.</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=4 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="page-break-before: always"><A NAME="__RefHeading__36_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>FERRAMENTAS</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Neste projeto serão
+usadas as seguintes ferramentas:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Java – Linguagem
+  utilizada;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Notepad++ - Edição
+  de texto e código-fonte;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>GitHub –
+  Repositório para controle de versionamento de software</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Gmail – Serviço
+  de comunicação;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Microsoft Office –
+  Edição de texto;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Microsoft Visio –
+  Criação de diagramas, cronogramas e fluxogramas</FONT></FONT></P>
+</UL>
 
+
+
+      <br><br>
 
 
 
@@ -567,7 +806,7 @@ nome e função de cada integrante da equipe:</FONT></FONT></P>
 <BR>
 </P>
 <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
-<IMG SRC="PLANO%20DE%20PROJETO_html_48535e42.jpg" NAME="graphics3" ALIGN=BOTTOM WIDTH=622 HEIGHT=370 BORDER=0></P>
+<IMG SRC="images/imgproj/03.png" NAME="graphics3" ALIGN=BOTTOM WIDTH=622 HEIGHT=370 BORDER=0></P>
 <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
 <BR>
 </P>
@@ -579,7 +818,7 @@ nome e função de cada integrante da equipe:</FONT></FONT></P>
 <BR>
 </P>
 <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
-<IMG SRC="images/imgproj/03.png" NAME="graphics4" ALIGN=BOTTOM WIDTH=622 HEIGHT=219 BORDER=0></P>
+<IMG SRC="images/imgproj/04.png" NAME="graphics4" ALIGN=BOTTOM WIDTH=622 HEIGHT=219 BORDER=0></P>
 <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
 <BR>
 </P>
