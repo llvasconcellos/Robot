@@ -1,0 +1,1150 @@
+---
+layout: post
+title: Blogging Like a Hacker
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Robot by DevHouse-BR</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/native.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        /* This is basic - uses default settings */
+        
+        $('a.fancy').fancybox({
+          overlayColor: '#000000',
+          overlayOpacity: 0.9,
+          padding: '6px'
+        });
+
+        $('.videoLB').fancybox({
+          type        : 'iframe',
+          overlayColor: '#000000',
+          overlayOpacity: 0.9,
+          padding: '6px'
+        });
+
+        $("a.grouped_elements").fancybox({
+          overlayColor: '#000000',
+          overlayOpacity: 0.9,
+          padding: '6px'
+        });
+        
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <p><img src="images/robot.png" /></p>
+        <!--p>Robot is a fork of the <a target="_blank" href="http://code.google.com/p/androidscreencast/">androidscreencast</a> project. Robot aims to view the screen and remote control android devices from desktop.</p>
+        <p class="view"><a href="https://github.com/DevHouse-BR/Robot">View the Project on GitHub <small>DevHouse-BR/Robot</small></a></p-->
+        <p>Robot é um fork do projeto <a target="_blank" href="http://code.google.com/p/androidscreencast/">androidscreencast</a>, cujo objetivo é visualizar a tela e controlar remotamente um dispositivo Android a partir do Desktop.</p>
+        <p class="view"><a href="https://github.com/DevHouse-BR/Robot">Veja o projeto no GitHub <small>DevHouse-BR/Robot</small></a></p>
+
+        <ul>
+          <li><a href="https://github.com/DevHouse-BR/Robot/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/DevHouse-BR/Robot/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/DevHouse-BR/Robot">View On <strong>GitHub</strong></a></li>
+        </ul>
+        <p><a target="_blank" href="http://www.devhouse.com.br"><img src="images/devhouse.png" /></a></p>
+      </header>
+      <a target="_blank" href="https://github.com/DevHouse-BR/Robot"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+      <section>
+<!--
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+-->
+
+
+
+
+
+
+<hr />
+      <span class="date">10 de maio de 2012</span>
+      <h2>Requisitos</h2>
+      <h6>por Junior Bastos</h6>
+
+<TABLE border=1 WIDTH=576 CELLPADDING=7 CELLSPACING=0>
+  <COL WIDTH=69>
+  <COL WIDTH=479>
+  <TR>
+    <TD COLSPAN=2 WIDTH=562 VALIGN=TOP BGCOLOR="#c6d9f1" STYLE="border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">Requisitos Funcionais</P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=69 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">RF01</P>
+    </TD>
+    <TD WIDTH=479 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">Um usuário deve conseguir rodar
+      o software sem maiores dificuldades</P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=69 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">RF02</P>
+    </TD>
+    <TD WIDTH=479 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">O software deve se ajustar ao
+      tamanho correto do dispositivo e se ajustar a rotação do
+      dispositivo.</P>
+    </TD>
+  </TR>
+</TABLE>
+<P STYLE="margin-bottom: 0.14in"><BR><BR>
+</P>
+<TABLE WIDTH=576 border=1 CELLPADDING=7 CELLSPACING=0>
+  <COL WIDTH=78>
+  <COL WIDTH=470>
+  <TR>
+    <TD COLSPAN=2 WIDTH=562 VALIGN=TOP BGCOLOR="#c6d9f1" STYLE="border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">Requisitos Não funcionais</P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=78 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">RNF01</P>
+    </TD>
+    <TD WIDTH=470 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">O software deve ter um assistente
+      de instalação</P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=78 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">RNF02</P>
+    </TD>
+    <TD WIDTH=470 STYLE="; border: none; padding: 0in">
+      <P STYLE="margin-bottom: 0.14in">Deve ter a documentação de
+      instalação</P>
+    </TD>
+  </TR>
+</TABLE>
+<P STYLE="margin-bottom: 0.14in"><BR><BR>
+</P>
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+      <span class="date">10 de maio de 2012</span>
+      <h2>Gerencia de Configuração</h2>
+      <h6>por Camila de Ramos</h6>
+      <OL STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__18_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>INTRODUÇÃO</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Este Plano de
+Gerenciamento de Configuração estabelece a relação entre a
+integridade do código-fonte e demais artefatos deste projeto,
+auxiliando o controle de modificações no sistema no decorrer do
+desenvolvimento e preservando um histórico dessas mudanças.</FONT></FONT></P>
+<OL STYLE="margin-left: 0in">
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__20_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ESCOPO</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Este documento
+descreve toda a estrutura e recursos utilizados durante o
+aprimoramento do projeto já existente denominado
+“AndroidScreenCast”.</FONT></FONT></P>
+<OL STYLE="margin-left: 0in">
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__22_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>TERMOS E
+    ABREVIAÇÕES</FONT></FONT></H2>
+  </OL>
+</OL>
+<OL START=2 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__24_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ORGANIZAÇÃO</FONT></FONT></H1>
+</OL>
+<OL START=2 STYLE="margin-left: 0in">
+  <LI><P LANG="pt-BR" STYLE="margin-left: 0.49in; margin-top: 0.25in; margin-bottom: 0.06in; line-height: 100%">
+  </P>
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__26_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>IDENTIFICAÇÃO
+    DOS ARTEFATOS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Todos os artefatos
+inclusos neste projeto serão identificados seguindo o mesmo padrão:</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>&lt;SilgaNomeDoProjeto&gt;_&lt;NomeDoArtefato&gt;.&lt;ExtensãoDoArquivo&gt;</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Exemplo:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Nome do Projeto:
+  AndroidScreenCast;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Nome do artefato:
+  Aplication;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Extensão do
+  arquivo: java;</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.79in; margin-bottom: 0in; line-height: 100%">
+    
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; margin-bottom: 0in; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Identificação do
+artefato: <I><B>ASC_Aplication.java</B></I></FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL STYLE="margin-left: 0in">
+  <OL START=2 STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__28_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>VERSÃO DOS
+    ARTEFATOS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+          <FONT FACE="Times New Roman, serif"><FONT SIZE=3> A versão
+do produto será gerenciada por diretórios. Para cada nova versão
+liberada será criado no mesmo nível da primeira versão uma nova
+pasta com o sufixo NomeDoProjeto_v(versão atual do projeto).</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Exemplo:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=3>AndroidScreenCast_v1
+  (primeira versão do produto)</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=3>AndroidScreenCast_v2
+  (segunda versão do produto)</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.59in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL STYLE="margin-left: 0in">
+  <OL START=3 STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__30_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>LOCALIZAÇÃO DOS
+    ARTEFATOS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Os arquivos gerados
+durante a construção do aplicativo ficarão localizados na pasta
+“AndroidScreenCast” e, em seguida, pela pasta de nome específica
+para cada funcionalidade.</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Exemplo:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Arquivo:
+  ASC_Dados.java (arquivo de gravação de dados)</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0.03in; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Localização:
+  ...\AndroidScreenCast\Dados\ASC_Dados.java</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<BR><BR>
+</P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>As interfaces
+  gráficas do projeto ficarão em:</FONT></FONT></P>
+</UL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>...\NomeProjeto\Interfaces
+\&lt;NomeArtefato&gt;.&lt;extensão&gt;</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=3 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="page-break-before: always"><A NAME="__RefHeading__32_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>CONTROLE DE
+  CONFIGURAÇÃO</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=2 STYLE="margin-left: 0in">
+  <OL STYLE="margin-left: 0.25in">
+    <LI><H2 LANG="pt-BR" CLASS="western"><A NAME="__RefHeading__34_1667542918"></A>
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=3>PROCEDIMENTOS DE
+    MUDANÇAS</FONT></FONT></H2>
+  </OL>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>As
+alterações/mudanças requisitadas durante o desenvolvimento do
+projeto e após a sua conclusão ocorrerão da seguinte maneira: </FONT></FONT>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>1º Essa solicitação
+será repassada a pessoa responsável pela edição/criação dos
+documentos do projeto, para atualização ou criação de novos
+documentos, caso seja necessário. Feita a alteração na
+documentação, será repassado ao desenvolvedor para aplicar as
+devidas mudanças.</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>2º Estando o
+desenvolvedor de posse da nova documentação, este aplica as
+mudanças necessárias no produto e repassa para o responsável pelos
+testes. Caso ocorra algum erro, o desenvolvedor será comunicado por
+e-mail. Quando todas as alterações estiverem prontas, sem nenhum
+erro, uma nova versão do produto será liberada conforme padrão
+descrito neste documento.</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=4 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="page-break-before: always"><A NAME="__RefHeading__36_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>FERRAMENTAS</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Neste projeto serão
+usadas as seguintes ferramentas:</FONT></FONT></P>
+<UL STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Java – Linguagem
+  utilizada;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Notepad++ - Edição
+  de texto e código-fonte;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>GitHub –
+  Repositório para controle de versionamento de software</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Gmail – Serviço
+  de comunicação;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Microsoft Office –
+  Edição de texto;</FONT></FONT></P>
+  <LI><P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0.5in; line-height: 150%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>Microsoft Visio –
+  Criação de diagramas, cronogramas e fluxogramas</FONT></FONT></P>
+</UL>
+
+
+
+      <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr />
+      <span class="date">10 de maio de 2012</span>
+      <h2>Plano de Projeto</h2>
+      <h6>por Todos</h6>
+      <p>Análise das reclamações e sugestões feitas via a lista de discussão.</p>
+
+<OL START=1 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.3in"><A NAME="__RefHeading__5_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ORGANIZAÇÃO DO
+  PROJETO</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.3in; text-indent: -0.3in; margin-bottom: 0in">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.3in; text-indent: -0.3in; margin-bottom: 0in">
+<IMG SRC="images/imgproj/01.png" NAME="graphics1" ALIGN=BOTTOM WIDTH=468 HEIGHT=434 BORDER=0></P>
+<OL START=3 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.2in"><A NAME="__RefHeading__7_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>ANÁLISE DE RISCOS</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<BR><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+A análise de riscos visa identificar uma série de possíveis
+acontecimentos que, de alguma forma, podem afetar o andamento
+ordenado do projeto. Depois de identificados todos os riscos, foi
+realizada uma análise para identificar a probabilidade destes e seu
+efeito sobre o desenvolvimento do projeto. Ao final, estabeleceram-se
+métodos para garantir o contorno dos fatos que geraram a
+instabilidade do desenvolvimento.</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+Identificação dos riscos:</P>
+<TABLE WIDTH=615 CELLPADDING=7 CELLSPACING=0>
+  <COL WIDTH=196>
+  <COL WIDTH=56>
+  <COL WIDTH=318>
+  <TR VALIGN=TOP>
+    <TD WIDTH=196 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Risco</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=56 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Afeta</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=318 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Descrição</B></FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=196 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Limitação
+      de bibliotecas de software</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=56 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Produto</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=318 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Não
+      existem bibliotecas de software disponível para desenvolvimento
+      de algum módulo do produto</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=196 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Rotatividade
+      de pessoal</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=56 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Projeto</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=318 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Saída
+      de pessoal envolvido diretamente no projeto</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=196 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <BR>
+      </P>
+    </TD>
+    <TD WIDTH=56 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <BR>
+      </P>
+    </TD>
+    <TD WIDTH=318 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <BR>
+      </P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=196 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Tempo
+      insuficiente</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=56 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Projeto
+      e Produto</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=318 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Não
+      haverá tempo suficiente para conclusão do projeto</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=196 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Incompatibilidade
+      de Ferramentas CASE</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=56 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Projeto</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=318 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">As
+      ferramentas CASE necessárias são incompatíveis com o sistema
+      utilizado</FONT></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.39in; line-height: 150%">
+<BR><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+Análise dos riscos:</P>
+<TABLE WIDTH=614 CELLPADDING=7 CELLSPACING=0>
+  <COL WIDTH=188>
+  <COL WIDTH=93>
+  <COL WIDTH=289>
+  <TR VALIGN=TOP>
+    <TD WIDTH=188 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Risco</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=93 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Probabilidade</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=289 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Efeitos</B></FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=188 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Limitação
+      de bibliotecas de software</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=93 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Baixo</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=289 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Sério</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=188 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Rotatividade
+      de pessoal</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=93 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Moderado</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=289 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Sério</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=188 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Tempo
+      insuficiente</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=93 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Moderado</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=289 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Catastrófico</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=188 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Incompatibilidade
+      de Ferramentas CASE</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=93 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Baixo</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=289 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Tolerável</FONT></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+<BR><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+Estratégia de contingência dos riscos:</P>
+<TABLE WIDTH=605 CELLPADDING=7 CELLSPACING=0>
+  <COL WIDTH=80>
+  <COL WIDTH=147>
+  <COL WIDTH=203>
+  <COL WIDTH=118>
+  <TR VALIGN=TOP>
+    <TD WIDTH=80 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Risco</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=147 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Contingência</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=203 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Minimização</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=118 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Prevenção</B></FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=80 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Limitação
+      de bibliotecas de software</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=147 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Desenvolver
+      as bibliotecas imprescindíveis ao desenvolvimento do produto</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=203 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <BR>
+      </P>
+    </TD>
+    <TD WIDTH=118 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <BR>
+      </P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=80 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Rotatividade
+      de pessoal</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=147 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Recrutar
+      novo colaborador com experiência no projeto em questão</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=203 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Distribuir
+      as tarefas afetadas aos outros membros da equipe</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=118 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <BR>
+      </P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=80 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Tempo
+      insuficiente</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=147 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Verificar
+      a possibilidade de automatização de algumas etapas e eliminar
+      processos menos importantes</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=203 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Aumentar
+      a jornada de empenho no projeto, dedicando mais horas por semana
+      no seu dsenvolvimento</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=118 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Dedicar
+      mais tempo no planejamento do cronograma de atividades</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=80 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Incompatibilidade
+      de Ferramentas CASE</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=147 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Verificar
+      a possibilidade de desenvolvimento sem o suporte das mesmas</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=203 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><BR>
+      </P>
+    </TD>
+    <TD WIDTH=118 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%">
+      <BR>
+      </P>
+    </TD>
+  </TR>
+</TABLE>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+<BR><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+<BR><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" ALIGN=JUSTIFY STYLE="line-height: 150%">
+<BR><BR>
+</P>
+<OL START=4 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.2in"><A NAME="__RefHeading__9_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>REQUISITOS DE
+  RECURSOS DE SOFTWARE E HARDWARE</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="text-indent: 0.39in; margin-bottom: 0in">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Durante o processo
+de criação e desenvolvimento do projeto, alguns recursos se fazem
+necessários. Abaixo a tabela descritiva destes recursos:</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="text-indent: 0.39in; margin-bottom: 0in">
+<BR>
+</P>
+<TABLE WIDTH=496 CELLPADDING=7 CELLSPACING=0>
+  <COL WIDTH=139>
+  <COL WIDTH=327>
+  <TR VALIGN=TOP>
+    <TD WIDTH=139 BGCOLOR="#fbd4b4" STYLE="border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding: 0in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.03in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif"><B>Ferramenta</B></FONT></P>
+    </TD>
+    <TD WIDTH=327 BGCOLOR="#fbd4b4" STYLE="border: 1.00pt solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: -0.08in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif"><B>Descrição</B></FONT></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD WIDTH=139 STYLE="; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding: 0in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.03in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">Ambiente de Desenvolvimento</FONT></P>
+    </TD>
+    <TD WIDTH=327 STYLE="; border: 1.00pt solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: -0.08in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">NetBeans IDE/Notepad++</FONT></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD WIDTH=139 STYLE="; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding: 0in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.03in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">Java</FONT></P>
+    </TD>
+    <TD WIDTH=327 STYLE="; border: 1.00pt solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: -0.08in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">Linguagem de Programação</FONT></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD WIDTH=139 STYLE="; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding: 0in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.03in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">GitHub</FONT></P>
+    </TD>
+    <TD WIDTH=327 STYLE="; border: 1.00pt solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: -0.08in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">Repositório e versionamento</FONT></P>
+    </TD>
+  </TR>
+  <TR>
+    <TD WIDTH=139 STYLE="; border-top: 1.00pt solid #000000; border-bottom: 1.00pt solid #000000; border-left: 1.00pt solid #000000; border-right: none; padding: 0in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.03in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">Sistema Operacional</FONT></P>
+    </TD>
+    <TD WIDTH=327 STYLE="; border: 1.00pt solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" CLASS="western" STYLE="margin-left: -0.08in; margin-bottom: 0in">
+      <FONT FACE="Times New Roman, serif">Linux</FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P LANG="pt-BR" CLASS="western" STYLE="text-indent: 0.39in; margin-bottom: 0in">
+<BR>
+</P>
+<OL START=5 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.2in"><A NAME="__RefHeading__11_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>DIVISÃO DO
+  TRABALHO </FONT></FONT>
+  </H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="text-indent: 0.39in; margin-bottom: 0in">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3>Tabela definindo
+nome e função de cada integrante da equipe:</FONT></FONT></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<TABLE WIDTH=616 CELLPADDING=7 CELLSPACING=0>
+  <COL WIDTH=181>
+  <COL WIDTH=404>
+  <TR VALIGN=TOP>
+    <TD WIDTH=181 STYLE="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Nome</B></FONT></FONT></P>
+    </TD>
+    <TD WIDTH=404 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Função</B></FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=181 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Camila
+      de Ramos</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=404 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Documentação
+      e Desenvolvimento</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=181 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Leonardo
+      Vasconcellos</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=404 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Gerente
+      de Projeto e Desenvolvimento</FONT></FONT></P>
+    </TD>
+  </TR>
+  <TR VALIGN=TOP>
+    <TD WIDTH=181 STYLE="; border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0in">
+      <P ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Hilton
+      Júnior</FONT></FONT></P>
+    </TD>
+    <TD WIDTH=404 STYLE="; border: 1px solid #000000; padding: 0in 0.08in">
+      <P LANG="pt-BR" ALIGN=CENTER STYLE="margin-bottom: 0in; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt">Documentação
+      e Testes</FONT></FONT></P>
+    </TD>
+  </TR>
+</TABLE>
+<P LANG="pt-BR" CLASS="western" STYLE="text-indent: 0.39in; margin-bottom: 0in">
+<BR>
+</P>
+<OL START=6 STYLE="margin-left: 0.25in">
+  <LI><H1 LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.2in"><A NAME="__RefHeading__13_1667542918"></A>
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=3>CRONOGRAMA DO
+  PROJETO</FONT></FONT></H1>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><IMG SRC="images/imgproj/02.png" NAME="graphics2" ALIGN=BOTTOM WIDTH=623 HEIGHT=235 BORDER=0></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL START=7 STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in">PROCESSOS
+  DO SOFTWARE</P>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<IMG SRC="images/imgproj/03.jpg" NAME="graphics3" ALIGN=BOTTOM WIDTH=622 HEIGHT=370 BORDER=0></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<BR>
+</P>
+<OL START=8 STYLE="margin-left: 0.25in">
+  <LI><P LANG="pt-BR" CLASS="western" STYLE="margin-bottom: 0in">PROCESSOS
+  DE TESTES</P>
+</OL>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<IMG SRC="images/imgproj/04.jpg" NAME="graphics4" ALIGN=BOTTOM WIDTH=622 HEIGHT=219 BORDER=0></P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+Testes de unidade: Componentes testados individualmente, podem ser
+funções, grupos, objeto.</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+Testes do sistema: Teste do sistema como um todo.</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<BR>
+</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+Teste de aceitação: Testes com os dados para verificar se os
+sistema atende aos requisitos propostos.</P>
+<P LANG="pt-BR" CLASS="western" STYLE="margin-left: 0.5in; margin-bottom: 0in">
+<BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- blog entry -->
+      <hr />
+      <span class="date">07 de maio de 2012</span>
+      <h2>Feedback de Usuários</h2>
+      <h6>por Camila de Ramos</h6>
+      <p>Análise das reclamações e sugestões feitas via a lista de discussão.</p>
+      <a class="grouped_elements" rel="group2" href="images/gr1.png"><img align="left" width="100" src="images/gr1-pq.png" alt=""/></a>
+      <a class="grouped_elements" rel="group2" href="images/gr2.png"><img align="left" width="100" src="images/gr2-pq.png" alt=""/></a><br /><br />
+
+
+ <!-- blog entry -->
+      <hr />
+      <span class="date">06 de maio de 2012</span>
+      <h2>Introdução do Projeto</h2>
+      <h6>por Junior Bastos</h6>
+      <p>O desenvolvimento de software é uma atividade de crescente importância na sociedade contemporânea. A utilização de dispositivos móveis nas mais diversas atividades do cotidiano da população tem gerado uma crescente demanda por soluções que viabilizam o uso produtivo dos mesmos.</p>
+      <p>Para a maioria dos estudantes de sistemas de informação, desenvolver um software é muitas vezes confundido com programar. Isso se explica pela maneira como estes são introduzidos nesta área, desenvolvendo habilidades de raciocínio logico, através de programação e estrutura de dados. Este conhecimento, apesar de ser muito importante, não deve ser tomado como primordial.</p>
+      <p>Entretanto chega-se a um ponto em que dado o tamanho ou a complexidade do problema que se pretende resolver, somente a programação não será suficiente. É então que a engenharia de software se torna necessária.</p>
+      <p>Este projeto visa contribuir para um projeto de software <i>opensource</i> (código fonte aberto). A contribuição será de adicionar novas funcionalidades e corrigir alguns bugs.</p>
+      <p>O software escolhido para contribuição é o AndroidScreenCast. Este software permite a utilização remotamente de qualquer dispositivo Android utilizando mouse e teclado. Como é escrito na linguagem Java, o mesmo deve funcionar em qualquer plataforma onde o SDK do Android suporta. O maior fim deste software é auxiliar os desenvolvedores da plataforma Android na hora de testar seus softwares, pois o emulador do SDK do Android é extremamente lento, o que o torna praticamente inútil no dia a dia do desenvolvedor.</p>
+      <p>Uma limitação do AndroidScreencast é o fato de necessitar do SDK do Android para o seu funcionamento. Mas é justamente isso que garante que ele funcione em qualquer dispositivo e plataforma.</p>
+      <p>Apesar das vantagens aqui expostas este software está com problemas para funcionar o mouse nas versões mais novas do Android devido a atualizações na API do sistema operacional. Sendo assim o principal objetivo deste projeto é atualizar o software para dar suporte as novas versões do sistema Android. Caso o objetivo principal seja alcançado em tempo hábil propomos também melhorar a interface e instalação do software para deixar o mesmo mais acessível para possíveis usuários não programadores.</p>
+
+      <!-- blog entry -->
+      <hr />
+      <span class="date">05 de maio de 2012</span>
+      <h2>Usando o shell do Git</h2>
+      <h6>por Leonardo Lima de Vasconcellos</h6>
+      <p>Como o comentado no post <a href="#">Git GUIs</a>, nem todos as interfaces gráficas para Git são boas e particularmente o RabbitVCS para Linux deixa um pouco a desejar, então para auxiliar o time de desenvolvimento vamos passar aqui alguns comandos básicos do Git em linha de comando. Os comandos abaixo foram testados no Linux Ubuntu 12.04 mas deve funcionar com qualquer versão do Linux e inclusive em outras plataformas usando o git bash.</p>
+      <h4>Clonando um repositório</h4>
+      <p>Considerando que o nome do repositório é Robot, crie um diretório chamado Robot, entre nele e execute o 'git init' que inicializará o repositório local do git e também criará a pasta .git.</p>
+{% highlight bash %}
+$ mkdir Robot
+$ cd Robot
+$ git init
+Initialized empty Git repository in /Home/User/Robot/.git/
+{% endhighlight %}
+      <p>Pronto, o repositório está inicializado mas apenas localmente. Agora é preciso conectar o repositório local com o remoto para sincronia dos arquivos. Substitua username pelo seu nome de usuário do github.</p>
+{% highlight bash %}
+$ git remote add origin git@github.com:username/Robot
+{% endhighlight %}
+      <p>Para fazer o download dos arquivos do repositório é preciso executar o comando pull do git. Será necessário entrar com a sua frase chave de segurança cadastrada no github. No comando, a palavra <i>master</i> é o nome da sua branch. Para o projeto Robot, a branch master é a branch do projeto em si e a branch gh-pages é a branch que contém os arquivos deste blog.</p>
+{% highlight bash %}
+$ git pull origin master
+{% endhighlight %}
+      <p>Agora tudo está pronto para iniciar o trabalho. Basta editar os arquivos já existentes.</p>
+      <h4>Trabalhando com o Git</h4>
+      <p> Agora caso seja necessário adicionar um novo arquivo basta executar o comando git add seguido do nome do arquivo ou diretório a ser adicionado ao controle de versão. Se este comando não for executado o arquivo que acabou de ser adicionado ao projeto vai ser ignorado pelo git. No caso dos diretórios toda a estrutura de arquivos e diretórios filhos serão adicionados também.</p>
+{% highlight bash %}
+$ git add filename.ext
+$ git add directory
+{% endhighlight %}
+      <p>Após feitas as alterações necessárias chegou a hora de comitar (salvar as alterações no repositório). Execute o comando a seguir dentro de qualquer pasta do projeto.</p>
+{% highlight bash %}
+$ git commit -am "mensagem para o commit"
+{% endhighlight %}
+      <p>A última etapa é sincronizar os arquivos com o repositório remoto usando o comando <i>push</i></p>.
+{% highlight bash %}
+$ git push
+{% endhighlight %}
+      <p>Pronto, com esses comandos básicos já é possível trabalhar no nosso projeto Robot!!</p>
+      <br />
+      <!-- blog entry end -->
+
+      <!-- blog entry -->
+      <hr />
+      <span class="date">28 de abril de 2012</span>
+      <h2>Git GUIs</h2>
+      <h6>por Leonardo Lima de Vasconcellos</h6>
+      <p>
+        Para quem não está acostumado com o uso do git em linha de comando (o git é uma ferramente inicialmente feita para ser usada em shell), fizemos uma pesquisa para encontrar possíveis <a target="_blank" href="http://pt.wikipedia.org/wiki/Interface_gr%C3%A1fica_do_utilizador">GUIs</a>, ou Graphical User Interface, para facilitar o uso do git. Encontramos algumas alternativas que são inumeradas a seguir:
+      </p>
+      <p class="note"><strong>1. TortoiseGit</strong></p>
+      
+      <p><a class="fancy" href="images/ContextMenuDirControl.png"><img align="left" width="100" src="images/ContextMenuDirControl-pg.png" alt=""/></a>O <a target="_blank" href="http://code.google.com/p/tortoisegit/">TortoiseGit</a> é o port do já famoso <a target="_blank" href="http://tortoisesvn.tigris.org/">TortoiseSVN</a> para o Git. Com seu funcionamento integrado ao shell do windows ele permite uma facil manipulação dos recursos do git através do menu de contexto windows explorer (botão direito do mouse). Com ele você facilmente faz operações como git clone, git init, git push, git pull, git add, etc. Além disso possui ferramenta para fazer merge de arquivos facilitando muito esta tarefa. Você pode baixar a última versão neste <a target="_blank" href="http://code.google.com/p/tortoisegit/downloads/list">link</a>.</p>
+      <br /><br />
+      <p class="note"><strong>2. SourceTree</strong></p>
+
+      <p>
+          <div class="videoWrapper">
+            <a class="videoLB" href="http://www.youtube.com/embed/tQE1S40Z0mE?autoplay=1&amp;rel=0&amp;wmode=transparent">
+              <img alt="SourceTree is a Mac client that provides a graphical interface for your DVCS repositories so you can focus on coding, not command lines." src="images/screen_1.png" class="launchVideo videoLB cboxElement">
+              <span class="playButton videoLB cboxElement"></span>
+            </a>
+          </div>
+          <a target="_blank" href="http://www.sourcetreeapp.com/">SourceTree</a> é um cliente Git free para Mac OS X desenvolvido pela Atlassian, a empresa por trás do poderoso Jira. Ele oferece suporte a outros servidores de repositórios como Bitbuckuet e Kiln e tem toda a facilidade de uso como uma boa interface Mac exige. Você pode fazer o download do SourceTree neste <a target="_blank" href="http://www.sourcetreeapp.com/download/">link</a>.
+      </p>
+      <br /><br />
+      <p class="note"><strong>3. RabbitVCS</strong></p>
+
+      <p>
+        <a class="grouped_elements" rel="group1" href="images/rabbitvcs/blame.png"><img hspace="6" align="left" src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+        <div style="display:none">
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/log_viewer.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/commit_dialog.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/commit_window.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+          <a class="grouped_elements" rel="group1" href="images/rabbitvcs/context_menu.png"><img src="images/rabbitvcs/blame-pq.png" alt=""/></a>
+        </div>
+        O site do <a target="_blank" href="http://www.rabbitvcs.org/">RabbitVCS</a> o descreve como um controle de versão fácil para Linux mas a verdade não é exatamente essa. O software até que ajuda em algumas tarefas mas não dispõe de um recurso básico que é o <i>git add</i>, ou pelo menos está com bug na versão que testamos, a 0.15.0.5-1 no Ubuntu 12.04 Precise Pangolin. O RabbitVCS é um projeto promissor mas ainda parece bastante inacabado e com bastante bugs. De qualquer forma vale a pena instalar para ajudar nas tarefas que o mesmo consegue executar. Estão disponíveis instruções de instalação para as distribuições <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/ubuntu">Ubuntu</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/debian">Debian</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/fedora">Fedora</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/arch">Arch</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/gentoo">Gentoo</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/mandriva">Mandriva</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/opensuse">OpenSuse</a>, <a target="_blank" href="http://wiki.rabbitvcs.org/wiki/install/rhelcentos">RedHat Enterprise e CentOS</a>.
+      </p>
+      <br/>
+      <h4>Instruções de instalação no Ubuntu</h4>
+      <p><strong>Karmic e posteriores</strong></p>
+{% highlight bash %}
+$ sudo add-apt-repository ppa:rabbitvcs/ppa
+{% endhighlight %}
+      <p></p>
+      <p><strong>Hardy, Intrepid e Jaunty</strong></p>
+{% highlight bash %}
+$ deb http://ppa.launchpad.net/rabbitvcs/ppa/ubuntu *DISTRO* main
+{% endhighlight %}
+      <p></p>
+      <p><strong>Instalação</strong></p>
+{% highlight bash %}
+$ sudo apt-get update
+$ sudo apt-get install «pacotes»
+{% endhighlight %}
+      <p></p>
+      <p><strong>... os pacotes são:</strong></p>
+      <ul>
+        <li>rabbitvcs-nautilus3 para a extensão do Nautilus 3.x (use com Ubuntu 11.10 ou maiores)</li>
+        <li>rabbitvcs-nautilus para a extensão do Nautilus 2.x</li>
+        <li>rabbitvcs-thunar para a extensão do  Thunar</li>
+        <li>rabbitvcs-gedit para a extensão do GEdit</li>
+        <li>rabbitvcs-cli para linha de comando</li>
+
+      <!-- blog entry end -->
+
+
+      <!-- blog entry -->
+      <hr />
+      <span class="date">21 de abril de 2012</span>
+      <h2>Conta no GitHub</h2>
+      <h6>por Leonardo Lima de Vasconcellos</h6>
+      <p><img src="images/logo.png" width="60" align="right" />
+        Para fazer o gerênciamento do código fonte deste projeto e controle de versão utilizaremos o <a target="_blank" href="http://git-scm.com/">Git</a>, que é hoje um dos mais utilizados para projetos de software OpenSource. 
+      </p>
+      <p><q><span class="gigantic">Git é um sistema de controle de versão distribuído com ênfase em velocidade. O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o desenvolvimento do kernel Linux. Cada diretório de trabalho Git é um repositório com todos os históricos e habilidade total de controle das revisões, não dependente de acesso a uma rede ou a um servidor central.</span></q><span><br/><i><a target="_blank" href="http://pt.wikipedia.org/wiki/Git">http://pt.wikipedia.org/wiki/Git</a></i></p>
+      <p>
+        <img src="images/github-profile.png" width="70" align="left" /> Então, resumindo, o git é o sistema de controle de versão (VCS) que será utilizado mas e o servidor que vai hospedar este serviço? Para isso escolhemos o GitHub pois oferece todos os recursos necessários e é gratuito para uso em projetos opensource. Com o github não só gerenciamos o código mas também é possível gerenciar a comunicação entre a equipe e hospedar páginas relacionadas ao projeto como este blog que você está lendo agora. :)
+      </p>
+      <p>
+        Para se cadastrar no github clique <a target="_blank" href="https://github.com/signup/free">aqui</a> e preencha o formulário. Após o preenchimento você será direcionado para a página inicial do github onde haverá um quadro intitulado "GitHub Bootcamp". No quadro, clique em "Set Up Git" para instruções de instalação do cliente git para a sua plataforma. Há opções para Linux, Windows e MacOSX.
+      </p>
+      <p>
+        Deve-se seguir as instruções com atenção, principalente a parte de criação de chave de segurança pois é um item imprescindível para o funcionamento do git com o github.
+      </p>
+      <!-- blog entry end -->
+
+
+
+      <!-- blog entry -->
+      <hr />
+      <span class="date">14 de abril de 2012</span>
+      <h2>Time de Desenvolvimento</h2>
+      <h6>por Leonardo Lima de Vasconcellos</h6>
+      <p>Orgulhosamente apresentamos nosso time de desenvolvimento nesse projeto: 
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/llvasconcellos" class="user-mention">@llvasconcellos</a>, um desenvolvedor web veterano que está sempre a procura de novas tecnologias que facilitem o desenvolvimento de aplicativos ricos para a internet.
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/camilaramos" class="user-mention">@CamilaRamos</a>, uma garota com grandes habilidades técnicas. Nós precisamos disso!
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/juniorbastos" class="user-mention">@junirbastos</a>, esse cara desenvolve ótimos websites dinâmicos!
+          </li>
+        </ul>
+      </p>
+      <!-- blog entry end -->
+
+
+      <!-- blog entry -->
+      <!--hr />
+      <span class="date">09 May 2012</span>
+      <h2>Development Team</h2>
+      <h6>por Leonardo Lima de Vasconcellos</h6>
+      <p>We are proud to present our current development team: 
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/llvasconcellos" class="user-mention">@llvasconcellos</a>, a veteren web developer who is always looking for better technologies to create rich internet applications.
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/camilaramos" class="user-mention">@CamilaRamos</a>, a girl with greate tech skills. We sure need that!
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/juniorbastos" class="user-mention">@junirbastos</a>, This guy knows how to make a really good websites.
+          </li>
+        </ul>
+      </p-->
+      <!-- blog entry end -->
+
+
+
+      </section>
+      <footer>
+        <p>Este projeto é mantido por <a target="_blank" href="https://github.com/DevHouse-BR">DevHouse-BR</a></p>
+        <p><small>Hospedado no <a target="_blank" href="http://pages.github.com">GitHub Pages</a></small></p>
+      </footer>
+      <!--footer>
+        <p>This project is maintained by <a target="_blank" href="https://github.com/DevHouse-BR">DevHouse-BR</a></p>
+        <p><small>Hosted on <a target="_blank" href="http://pages.github.com">GitHub Pages</a></small></p>
+      </footer-->
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
